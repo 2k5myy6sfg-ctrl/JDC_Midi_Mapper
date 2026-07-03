@@ -8,9 +8,13 @@ I'm not a software developer, so please don't expect professional support, regul
 
 As long as the plugin continues to meet my own needs, I don't plan to make further changes. Use it at your own risk—no warranties or guarantees are provided.
 
+## Introduction
+
 JDC MIDI Mapper is a macOS MIDI remapping plugin available in VST3 and Audio Unit formats. It performs real-time MIDI note remapping and was designed primarily for live drummers using **Gig Performer** with **Superior Drummer 3**, while remaining useful in any AU/VST3-compatible DAW or plugin host.
 
 The core idea is simple: one drum performance setup, one Superior Drummer 3 project, and multiple instantly selectable MIDI mapping configurations called **Scenes**. This makes it possible to switch between different drums, articulations, percussion layouts, and e-drum mappings without changing kits or reloading plugins.
+
+It is especially handy when using one or more **percussion pads**, because a single physical pad can be repurposed instantly for different sounds, articulations, or auxiliary percussion instruments by switching Scenes instead of rebuilding the drum project.
 
 ## Overview
 
@@ -19,10 +23,15 @@ JDC MIDI Mapper helps performers route incoming MIDI notes to different target n
 - switch between multiple snare drums inside one Superior Drummer 3 session
 - swap between acoustic and electronic kick mappings
 - access multiple X-Drums and percussion instruments
+- reuse percussion pads for different instruments across songs or sections
 - adapt to different e-drum modules or custom pad layouts
 - recall different live song mappings instantly
 
 The plugin is built for low-latency live use, fast scene switching, and a practical workflow on stage.
+
+Example of a Scene with an alternate snare drum selection and remapped MIDI notes:
+
+![JDC MIDI Mapper Scene Example](docs/images/gig-performer-jdc-midi-mapper-scene-example.png)
 
 ## Features
 
@@ -115,6 +124,10 @@ Assign different Scenes to different X-Drum layouts, making it easy to repurpose
 
 Build Scenes focused on tambourine, cowbell, clap, shaker, or auxiliary percussion note layouts without rebuilding your full SD3 session.
 
+### Reusing Percussion Pads
+
+Use the same percussion pad for different instruments or articulations in different Scenes. This is especially useful in live rigs where you have limited physical pads but still want fast access to many percussion sounds.
+
 ### Alternative MIDI Layouts
 
 Create song-specific or player-specific layouts so the same physical pad arrangement can drive different note maps depending on the performance context.
@@ -141,6 +154,8 @@ Superior Drummer 3
 
 In this workflow, the drummer plays a single module or pad setup, JDC MIDI Mapper translates the incoming note layout based on the active Scene, and Superior Drummer 3 receives the remapped notes.
 
+This is particularly practical for percussion pads, because the same pad can become a clap in one Scene, a shaker in another, and a tambourine or cowbell in the next, all without changing the Superior Drummer 3 project.
+
 This allows multiple mappings to exist inside one performance rig:
 
 - one Scene for a main snare
@@ -150,6 +165,10 @@ This allows multiple mappings to exist inside one performance rig:
 - one Scene for electronic layers
 
 All of this can be controlled from Gig Performer widgets or buttons without changing the Superior Drummer 3 project itself.
+
+Example Gig Performer routing with JDC MIDI Mapper placed between MIDI input and the target Superior Drummer 3 instances:
+
+![Gig Performer Routing Overview](docs/images/gig-performer-routing-overview.png)
 
 ## Per-Row Learn Workflow
 

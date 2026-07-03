@@ -1,5 +1,13 @@
 # JDC MIDI Mapper
 
+## Disclaimer
+
+This plugin was created with the help of Codex and tailored to my own workflow and requirements. It works well for my use case, and I'm happy to share it with others who may find it useful.
+
+I'm not a software developer, so please don't expect professional support, regular updates, or new features. If something is missing or doesn't fit your needs, feel free to use this code as a starting point and modify or extend it however you like.
+
+As long as the plugin continues to meet my own needs, I don't plan to make further changes. Use it at your own risk—no warranties or guarantees are provided.
+
 JDC MIDI Mapper is a macOS MIDI remapping plugin available in VST3 and Audio Unit formats. It performs real-time MIDI note remapping and was designed primarily for live drummers using **Gig Performer** with **Superior Drummer 3**, while remaining useful in any AU/VST3-compatible DAW or plugin host.
 
 The core idea is simple: one drum performance setup, one Superior Drummer 3 project, and multiple instantly selectable MIDI mapping configurations called **Scenes**. This makes it possible to switch between different drums, articulations, percussion layouts, and e-drum mappings without changing kits or reloading plugins.

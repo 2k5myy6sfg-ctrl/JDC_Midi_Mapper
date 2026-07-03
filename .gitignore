@@ -1,6 +1,27 @@
+# macOS / Finder
+.DS_Store
+
+# Local Codex / container noise
+.home/
+work/
+
+# CMake / generated build folders
 build/
 build-make/
+build-ninja/
+build-xcode/
+cmake-build-*/
+
+# Local build artefacts / exports
 outputs/
-.DS_Store
+*.component
+*.vst3
+
+# Xcode / editor user files
 *.user
 *.swp
+*.swo
+*.tmp
+
+# Logs
+*.log

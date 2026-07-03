@@ -1,0 +1,6 @@
+build/
+build-make/
+outputs/
+.DS_Store
+*.user
+*.swp
